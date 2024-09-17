@@ -1,5 +1,6 @@
-const startDate = new Date('2024-09-02').getTime();
+let startDate;
 function updateTimer(){
+    
 const now = new Date().getTime()/* to get the current time in milliseconds */
 const difference= now-startDate;/* to calculate the time difference */
 const Days= Math.floor(difference/(1000*60*60*24));/* Calculate days:1000 milliseconds * 60 seconds * 60 minutes * 24 hours = 1 day */ 
