@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer</title>
+    <title>Date Duration Tracker</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 items-center justify-center">
-    <div  class="bg-white p-8 rounded-lg shadow-md w-96">
-<h1 class="text-2xl font-bold mb-4 text-center text-gray-800 ">Date Duration Tracker</h1>
-<div class="mb-4">
-    <label for="startDate" class="block text-sm font-medium text-gray-700">Start Date</label>
-    <input type="date" id="startDate" class="mt-1 block w-full rounded-md border-gray-300">
-</div>
-</div>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-md w-96">
+        <h1 class="text-2xl font-bold mb-4 text-center text-gray-800">Date Duration Tracker</h1>
+        <div class="mb-4">
+            <label for="startDate" class="block text-sm font-medium text-gray-700">Start Date:</label>
+            <input type="date" id="startDate" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+        </div>
+        <div class="flex space-x-2">
+            <button id="setDate" class="flex-1 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Set Date</button>
+            <button id="resetDate" class="flex-1 bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 transition duration-300">Reset</button>
+        </div>
+        <div id="timer" class="mt-6 text-center text-xl font-semibold text-gray-700"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
